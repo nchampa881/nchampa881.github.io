@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The Fashion Vault | Fashion, Beauty & Shopping</title>
+<title>The Fashion Vault | Fashion • Beauty • Shopping</title>
 
-<meta name="description" content="Discover the latest fashion trends, beauty inspiration, shopping finds, outfit ideas and lifestyle tips.">
-<meta name="keywords" content="fashion, shopping, beauty, outfits, trends, style, women fashion">
-<meta name="author" content="The Fashion Vault">
+<meta name="description" content="Discover fashion trends, beauty tips, shopping guides and style inspiration at The Fashion Vault.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,23 +16,26 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#fffaf9;
-color:#333;
+background:#faf7f4;
+color:#222;
+line-height:1.6;
 }
 
 header{
-background:#111;
-color:white;
-padding:18px 8%;
+background:#000;
+color:#fff;
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 .logo{
@@ -56,67 +57,65 @@ color:#d4af37;
 }
 
 .hero{
-padding:90px 8%;
-background:linear-gradient(135deg,#ffe7ef,#fffdfd);
+height:90vh;
 display:flex;
+justify-content:center;
 align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80");
+background-size:cover;
+background-position:center;
+color:white;
 }
 
-.hero-text{
-max-width:550px;
-}
-
-.hero-text h1{
-font-size:55px;
+.hero h1{
+font-size:60px;
 margin-bottom:20px;
-color:#111;
 }
 
-.hero-text p{
-font-size:20px;
-line-height:1.7;
+.hero p{
+font-size:22px;
 margin-bottom:30px;
 }
 
-.button{
+.btn{
 display:inline-block;
+padding:15px 35px;
 background:#d4af37;
 color:black;
-padding:15px 35px;
-border-radius:40px;
 text-decoration:none;
+border-radius:40px;
 font-weight:bold;
+transition:.3s;
 }
 
-.hero img{
-width:450px;
-max-width:100%;
-border-radius:20px;
+.btn:hover{
+background:white;
 }
 
-.section{
-padding:80px 8%;
+section{
+padding:80px 10%;
 }
 
-.title{
+h2{
 text-align:center;
-font-size:38px;
-margin-bottom:45px;
+font-size:40px;
+margin-bottom:50px;
+color:#111;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:25px;
 border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 transition:.3s;
 }
 
@@ -124,32 +123,99 @@ transition:.3s;
 transform:translateY(-8px);
 }
 
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
 .card h3{
-margin-bottom:15px;
-color:#d4af37;
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+color:#666;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about p{
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.top{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#d4af37;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:10px;
+}
+
 }
 
 </style>
 
 </head>
 
-<body>
+<body id="home">
 
 <header>
 
-<div class="logo">
-The Fashion Vault
-</div>
+<div class="logo">The Fashion Vault</div>
 
 <nav>
 
-<a href="index.html">Home</a>
+<a href="#home">Home</a>
 
-<a href="blog.html">Blog</a>
+<a href="#about">About</a>
 
-<a href="about.html">About</a>
+<a href="#articles">Articles</a>
 
-<a href="contact.html">Contact</a>
+<a href="#categories">Categories</a>
+
+<a href="#contact">Contact</a>
 
 </nav>
 
@@ -157,213 +223,132 @@ The Fashion Vault
 
 <section class="hero">
 
-<div class="hero-text">
+<div>
 
-<h1>Welcome to The Fashion Vault</h1>
+<h1>The Fashion Vault</h1>
+
+<p>Fashion • Beauty • Shopping Inspiration</p>
+
+<a href="#articles" class="btn">Explore Articles</a>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2>About The Fashion Vault</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Fashion">
+
+<div>
 
 <p>
 
-Discover fashion trends, shopping inspiration,
-beauty tips, affordable luxury,
-and stylish outfit ideas curated for modern women.
+Welcome to <strong>The Fashion Vault</strong> — your destination for fashion inspiration, beauty tips, shopping guides and lifestyle trends.
 
-</p>
+We help fashion lovers discover elegant outfits, affordable shopping finds, seasonal trends and styling ideas from around the world.
 
-<a href="blog.html" class="button">
+Whether you're looking for everyday fashion, festive outfits or timeless wardrobe essentials, The Fashion Vault is here to inspire your style journey.
 
-Explore Articles
-
-</a>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=700" alt="Fashion">
-
-</section>
-<section class="section">
-
-<h2 class="title">Explore Categories</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>👗 Women's Fashion</h3>
-<p>Discover dresses, ethnic wear, casual outfits, office styles and everyday fashion inspiration.</p>
-</div>
-
-<div class="card">
-<h3>👜 Bags & Accessories</h3>
-<p>Find elegant handbags, jewelry, sunglasses, watches and accessories to complete every look.</p>
-</div>
-
-<div class="card">
-<h3>💄 Beauty</h3>
-<p>Explore skincare, makeup, haircare and beauty products for a glowing everyday look.</p>
-</div>
-
-<div class="card">
-<h3>🛍 Shopping Finds</h3>
-<p>Affordable fashion, trending products and curated shopping recommendations.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="title">Latest Fashion Articles</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Top 10 Summer Outfit Ideas</h3>
-<p>Simple and elegant outfits perfect for everyday fashion.</p>
-<a href="#">Read More →</a>
-</div>
-
-<div class="card">
-<h3>Best Handbags Under ₹2,000</h3>
-<p>Luxury-looking handbags without spending a fortune.</p>
-<a href="#">Read More →</a>
-</div>
-
-<div class="card">
-<h3>Trending Sneakers of 2026</h3>
-<p>The most stylish sneakers everyone is talking about.</p>
-<a href="#">Read More →</a>
-</div>
-
-<div class="card">
-<h3>Wedding Guest Outfit Guide</h3>
-<p>Elegant looks for weddings, parties and celebrations.</p>
-<a href="#">Read More →</a>
-</div>
-
-<div class="card">
-<h3>Beauty Essentials Every Woman Needs</h3>
-<p>Our favourite skincare and makeup products for daily use.</p>
-<a href="#">Read More →</a>
-</div>
-
-<div class="card">
-<h3>Affordable Luxury Fashion Brands</h3>
-<p>Brands that combine premium style with affordable prices.</p>
-<a href="#">Read More →</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="section" style="background:#fff3f7;border-radius:20px;">
-
-<h2 class="title">Why Follow The Fashion Vault?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✨ Daily Fashion Trends</h3>
-<p>Stay updated with what's trending around the world.</p>
-</div>
-
-<div class="card">
-<h3>📌 Pinterest Inspiration</h3>
-<p>Save outfit ideas, shopping inspiration and styling tips.</p>
-</div>
-
-<div class="card">
-<h3>💰 Smart Shopping</h3>
-<p>Find affordable fashion picks and honest product recommendations.</p>
-</div>
-
-</div>
-
-</section>
-<section class="section">
-
-<h2 class="title">About The Fashion Vault</h2>
-
-<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;line-height:1.8;">
-
-Welcome to <strong>The Fashion Vault</strong>, your destination for fashion inspiration,
-shopping recommendations, beauty tips, outfit ideas and lifestyle trends.
-
-Our mission is to help women discover stylish looks, affordable shopping finds,
-timeless fashion inspiration and confidence through everyday style.
-
-Whether you're looking for seasonal trends, wardrobe essentials or budget-friendly
-fashion, The Fashion Vault brings carefully curated content to inspire your next look.
-
-</p>
-
-</section>
-
-<section style="background:#111;color:white;padding:70px 8%;text-align:center;">
-
-<h2 style="font-size:38px;margin-bottom:20px;">
-Stay Inspired
-</h2>
-
-<p style="max-width:700px;margin:auto;font-size:18px;line-height:1.7;">
-Follow The Fashion Vault for the latest fashion trends, shopping finds,
-beauty inspiration and style guides.
 </p>
 
 <br>
 
-<a href="https://www.pinterest.com/" class="button">
-Follow on Pinterest
-</a>
+<a href="#articles" class="btn">Read Our Articles</a>
+
+</div>
+
+</div>
 
 </section>
 
-<footer style="background:#000;color:white;padding:60px 8%;">
+<section id="articles">
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+<h2>Latest Articles</h2>
 
-<div>
+<div class="cards">
 
-<h2 style="color:#d4af37;">
-The Fashion Vault
-</h2>
+<div class="card">
 
-<p style="margin-top:15px;line-height:1.8;">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80">
 
-Fashion • Shopping • Beauty • Lifestyle
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="color:#d4af37;">Quick Links</h3>
-
-<p><a href="index.html" style="color:white;text-decoration:none;">Home</a></p>
-
-<p><a href="blog.html" style="color:white;text-decoration:none;">Blog</a></p>
-
-<p><a href="about.html" style="color:white;text-decoration:none;">About</a></p>
-
-<p><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></p>
-
-</div>
-
-<div>
-
-<h3 style="color:#d4af37;">Contact</h3>
-
-<p>Email:</p>
+<h3>10 Elegant Ethnic Wear Ideas</h3>
 
 <p>
 
-<a href="mailto:nchampa881@gmail.com"
-style="color:white;text-decoration:none;">
+Discover beautiful sarees, lehengas, kurtis and festive outfits perfect for every occasion.
 
-nchampa881@gmail.com
+</p>
 
-</a>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80">
+
+<h3>Summer Fashion Trends 2026</h3>
+
+<p>
+
+Stay stylish this season with the latest colours, fabrics and outfit inspirations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80">
+
+<h3>Affordable Luxury Fashion</h3>
+
+<p>
+
+Explore fashion that looks premium while staying within your budget.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&w=800&q=80">
+
+<h3>Beauty Essentials</h3>
+
+<p>
+
+Our favourite skincare and makeup products for a fresh everyday look.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80">
+
+<h3>Wardrobe Must-Haves</h3>
+
+<p>
+
+Essential clothing pieces every woman should own for effortless styling.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80">
+
+<h3>Trending Accessories</h3>
+
+<p>
+
+Discover handbags, jewellery and accessories to complete your perfect outfit.
 
 </p>
 
@@ -371,15 +356,130 @@ nchampa881@gmail.com
 
 </div>
 
-<hr style="margin:40px 0;border-color:#444;">
+</section>
+<section id="categories">
 
-<p style="text-align:center;">
+<h2>Fashion Categories</h2>
 
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Women's Fashion">
+<h3>Women's Fashion</h3>
+<p>Discover the latest dresses, tops, jeans, ethnic wear and seasonal outfit inspiration.</p>
+<a href="#articles" class="btn" style="margin:15px;display:inline-block;">Explore</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="Beauty">
+<h3>Beauty Tips</h3>
+<p>Explore skincare routines, makeup ideas and beauty essentials for every occasion.</p>
+<a href="#articles" class="btn" style="margin:15px;display:inline-block;">Read More</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Shopping">
+<h3>Shopping Guide</h3>
+<p>Find affordable fashion, smart shopping tips and trending accessories.</p>
+<a href="#articles" class="btn" style="margin:15px;display:inline-block;">View Guide</a>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Follow The Fashion Vault</h2>
+
+<p style="text-align:center;font-size:18px;max-width:800px;margin:auto;">
+
+Follow <strong>The Fashion Vault</strong> on Pinterest for daily fashion inspiration, ethnic wear ideas, beauty tips and shopping recommendations.
+
+</p>
+
+<div style="text-align:center;margin-top:35px;">
+
+<a href="https://www.pinterest.com/" target="_blank" class="btn">
+Visit Pinterest
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Subscribe for Updates</h2>
+
+<p style="text-align:center;font-size:18px;">
+Get the latest fashion articles delivered to your inbox.
+</p>
+
+<div style="max-width:500px;margin:30px auto;text-align:center;">
+
+<input type="email"
+placeholder="Enter your email"
+style="width:100%;padding:15px;border:1px solid #ccc;border-radius:40px;margin-bottom:20px;">
+
+<a href="#contact" class="btn">
+Subscribe
+</a>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div style="max-width:700px;margin:auto;text-align:center;">
+
+<p style="font-size:18px;margin-bottom:20px;">
+Have a fashion suggestion or collaboration idea? We'd love to hear from you!
+</p>
+
+<p style="font-size:18px;">
+📧 Email:
+<a href="mailto:nchampa881@gmail.com">nchampa881@gmail.com</a>
+</p>
+
+<p style="font-size:18px;margin-top:15px;">
+🌐 Website:
+<a href="#home">The Fashion Vault</a>
+</p>
+
+<div style="margin-top:35px;">
+
+<a href="mailto:nchampa881@gmail.com" class="btn">
+Email Us
+</a>
+
+<a href="#home" class="btn" style="margin-left:15px;">
+Back to Home
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>The Fashion Vault</h3>
+
+<p style="margin-top:15px;">
+Fashion • Beauty • Shopping Inspiration
+</p>
+
+<p style="margin-top:10px;">
 © 2026 The Fashion Vault. All Rights Reserved.
-
 </p>
 
 </footer>
+
+<a href="#home" class="top">↑</a>
 
 </body>
 
