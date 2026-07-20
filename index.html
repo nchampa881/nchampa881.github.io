@@ -6,14 +6,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The Fashion Vault | Fashion • Beauty • Lifestyle</title>
+<title>The Fashion Vault | Luxury Fashion Magazine</title>
 
-<meta name="description" content="The Fashion Vault by Champa Nath - Luxury Fashion, Beauty, Shopping and Lifestyle Inspiration.">
+<meta name="description" content="The Fashion Vault - Fashion, Beauty, Shopping and Lifestyle by Champa Nath">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -28,29 +28,30 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Montserrat',sans-serif;
-
-background:#faf9f7;
-
-color:#111;
-
+background:#fcfbf8;
+color:#222;
 line-height:1.8;
-
+overflow-x:hidden;
 }
 
 img{
-max-width:100%;
 display:block;
+max-width:100%;
 }
 
 a{
-
 text-decoration:none;
-
 color:inherit;
-
 }
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+/* ================= HEADER ================= */
 
 header{
 
@@ -62,9 +63,7 @@ left:0;
 
 width:100%;
 
-background:white;
-
-padding:25px 8%;
+padding:22px 7%;
 
 display:flex;
 
@@ -72,21 +71,25 @@ justify-content:space-between;
 
 align-items:center;
 
-box-shadow:0 2px 20px rgba(0,0,0,.08);
+background:rgba(255,255,255,.95);
 
-z-index:999;
+backdrop-filter:blur(15px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+z-index:1000;
 
 }
 
 .logo{
 
-font-size:34px;
-
 font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
 
 font-weight:700;
 
-letter-spacing:3px;
+letter-spacing:5px;
 
 }
 
@@ -100,1040 +103,11 @@ nav a{
 
 margin-left:35px;
 
-font-size:15px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-transition:.3s;
-
-}
-
-nav a:hover{
-
-color:#c9a227;
-
-}
-
-.hero{
-
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-
-url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-color:white;
-
-padding:20px;
-
-}
-
-.hero-content{
-
-max-width:900px;
-
-}
-
-.hero h1{
-
-font-size:75px;
-
-font-family:'Cormorant Garamond',serif;
-
-letter-spacing:5px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-margin-bottom:40px;
-
-}
-
-.button{
-
-display:inline-block;
-
-padding:18px 45px;
-
-background:#c9a227;
-
-color:white;
-
-font-weight:600;
-
-letter-spacing:2px;
-
-transition:.4s;
-
-}
-
-.button:hover{
-
-background:#111;
-
-}
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:48px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-
-THE <span>FASHION</span> VAULT
-
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-
-<a href="#">About</a>
-
-<a href="#">Articles</a>
-
-<a href="#">Beauty</a>
-
-<a href="#">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>THE FASHION VAULT</h1>
-
-<p>
-Luxury Fashion • Beauty • Style Inspiration • Shopping Guides
-</p>
-
-<a href="#" class="button">
-
-EXPLORE NOW
-
-</a>
-
-</div>
-
-</section>
-<!-- ================= FEATURED ARTICLES ================= -->
-
-<section class="featured">
-
-<div class="section-title">
-
-<p>EDITOR'S PICKS</p>
-
-<h2>Featured Articles</h2>
-
-</div>
-
-<div class="article-grid">
-
-<div class="article-card">
-
-<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80">
-
-<div class="article-content">
-
-<span>Fashion Trends</span>
-
-<h3>Top 10 Summer Outfit Ideas Every College Girl Should Try</h3>
-
-<p>
-Discover comfortable, stylish, and affordable outfit ideas that keep you fashionable throughout the summer.
-</p>
-
-<a href="#">Read More →</a>
-
-</div>
-
-</div>
-
-<div class="article-card">
-
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80">
-
-<div class="article-content">
-
-<span>Shopping Guide</span>
-
-<h3>Luxury Fashion Looks on an Affordable Budget</h3>
-
-<p>
-Learn how to create elegant outfits without spending a fortune using timeless wardrobe essentials.
-</p>
-
-<a href="#">Read More →</a>
-
-</div>
-
-</div>
-
-<div class="article-card">
-
-<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80">
-
-<div class="article-content">
-
-<span>Beauty</span>
-
-<h3>Minimal Beauty Routine for a Naturally Elegant Look</h3>
-
-<p>
-Simple beauty habits and skincare essentials to help you achieve a fresh, confident appearance.
-</p>
-
-<a href="#">Read More →</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-/* ================= FEATURED ARTICLES ================= */
-
-.featured{
-
-padding:100px 8%;
-
-background:#faf9f7;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:70px;
-
-}
-
-.section-title p{
-
-letter-spacing:4px;
-
-color:#c9a227;
-
-font-size:14px;
-
-margin-bottom:10px;
-
-}
-
-.section-title h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:55px;
-
-font-weight:600;
-
-}
-
-.article-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-gap:35px;
-
-}
-
-.article-card{
-
-background:white;
-
-overflow:hidden;
-
-box-shadow:0 10px 35px rgba(0,0,0,.08);
-
-transition:.4s;
-
-}
-
-.article-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.article-card img{
-
-height:420px;
-
-width:100%;
-
-object-fit:cover;
-
-}
-
-.article-content{
-
-padding:30px;
-
-}
-
-.article-content span{
-
-color:#c9a227;
-
-text-transform:uppercase;
-
-font-size:13px;
-
-letter-spacing:2px;
-
-}
-
-.article-content h3{
-
-margin:15px 0;
-
-font-size:28px;
-
-font-family:'Cormorant Garamond',serif;
-
-}
-
-.article-content p{
-
-color:#555;
-
-margin-bottom:25px;
-
-}
-
-.article-content a{
-
-font-weight:bold;
-
-letter-spacing:1px;
-
-}
-  <!-- ================= ABOUT ================= -->
-
-<section class="about">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Fashion Model">
-
-</div>
-
-<div class="about-content">
-
-<p class="small-heading">
-ABOUT THE FASHION VAULT
-</p>
-
-<h2>
-Where Fashion Meets Creativity
-</h2>
-
-<p>
-
-Welcome to <strong>The Fashion Vault</strong>, a fashion destination created by <strong>Champa Nath</strong>, a BCA Artificial Intelligence & Machine Learning student from Assam with a passion for creativity, timeless style, and modern fashion.
-
-This platform is dedicated to helping fashion lovers discover elegant outfit ideas, beauty inspiration, affordable shopping finds, and the latest fashion trends from around the world.
-
-</p>
-
-<p>
-
-Fashion is more than clothing—it's confidence, personality, and self-expression. Through carefully curated articles and style inspiration, The Fashion Vault aims to help every woman build a wardrobe she truly loves.
-
-</p>
-
-<a href="#" class="button">
-LEARN MORE
-</a>
-
-</div>
-
-</section>
-/* ================= ABOUT ================= */
-
-.about{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:80px;
-
-padding:120px 8%;
-
-align-items:center;
-
-background:white;
-
-}
-
-.about img{
-
-width:100%;
-
-height:650px;
-
-object-fit:cover;
-
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-
-}
-
-.small-heading{
-
-color:#c9a227;
-
-letter-spacing:4px;
-
-margin-bottom:15px;
-
-font-size:14px;
-
-}
-
-.about-content h2{
-
-font-size:55px;
-
-font-family:'Cormorant Garamond',serif;
-
-margin-bottom:30px;
-
-}
-
-.about-content p{
-
-margin-bottom:25px;
-
-font-size:18px;
-
-color:#555;
-
-}
-
-@media(max-width:900px){
-
-.about{
-
-grid-template-columns:1fr;
-
-}
-
-.about img{
-
-height:450px;
-
-}
-
-}
-<!-- ================= CATEGORIES ================= -->
-
-<section class="categories">
-
-<div class="section-title">
-
-<p>EXPLORE</p>
-
-<h2>Discover Our World</h2>
-
-</div>
-
-<div class="category-grid">
-
-<div class="category-card">
-
-<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Fashion">
-
-<div class="overlay">
-
-<h3>Fashion</h3>
-
-<p>Latest trends, outfit inspiration & styling tips.</p>
-
-</div>
-
-</div>
-
-<div class="category-card">
-
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Beauty">
-
-<div class="overlay">
-
-<h3>Beauty</h3>
-
-<p>Skincare, makeup & everyday beauty routines.</p>
-
-</div>
-
-</div>
-
-<div class="category-card">
-
-<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Shopping">
-
-<div class="overlay">
-
-<h3>Shopping</h3>
-
-<p>Affordable luxury shopping guides and finds.</p>
-
-</div>
-
-</div>
-
-<div class="category-card">
-
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Lifestyle">
-
-<div class="overlay">
-
-<h3>Lifestyle</h3>
-
-<p>Confidence, elegance and modern living.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-/* ================= CATEGORIES ================= */
-
-.categories{
-
-padding:120px 8%;
-
-background:#f7f5f2;
-
-}
-
-.category-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-.category-card{
-
-position:relative;
-
-overflow:hidden;
-
-height:420px;
-
-cursor:pointer;
-
-border-radius:4px;
-
-}
-
-.category-card img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-transition:.6s;
-
-}
-
-.category-card:hover img{
-
-transform:scale(1.1);
-
-}
-
-.overlay{
-
-position:absolute;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,.45);
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:flex-end;
-
-padding:30px;
-
-color:white;
-
-transition:.4s;
-
-}
-
-.overlay h3{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:36px;
-
-margin-bottom:10px;
-
-}
-
-.overlay p{
-
-font-size:16px;
-
-line-height:1.6;
-
-}
-
-.category-card:hover .overlay{
-
-background:rgba(0,0,0,.65);
-
-}
-<!-- ================= EDITOR'S CHOICE ================= -->
-
-<section class="editor">
-
-<div class="editor-image">
-
-<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80" alt="Editor's Choice">
-
-</div>
-
-<div class="editor-content">
-
-<p class="small-heading">EDITOR'S CHOICE</p>
-
-<h2>
-Style Is More Than Fashion—It's Confidence.
-</h2>
-
-<p>
-
-Fashion is a powerful way to express yourself. Whether you're dressing for college, work, or a special occasion, confidence begins with wearing something that truly reflects who you are.
-
-At <strong>The Fashion Vault</strong>, every article is carefully curated to help you discover elegant fashion ideas, affordable shopping finds, beauty inspiration, and timeless style tips.
-
-</p>
-
-<a href="#" class="button">
-
-READ MORE
-
-</a>
-
-</div>
-
-</section>
-/* ================= EDITOR ================= */
-
-.editor{
-
-display:grid;
-
-grid-template-columns:1.2fr 1fr;
-
-gap:70px;
-
-padding:120px 8%;
-
-background:#111;
-
-align-items:center;
-
-color:white;
-
-}
-
-.editor img{
-
-width:100%;
-
-height:650px;
-
-object-fit:cover;
-
-}
-
-.editor-content h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:58px;
-
-margin:25px 0;
-
-line-height:1.2;
-
-}
-
-.editor-content p{
-
-font-size:18px;
-
-line-height:1.9;
-
-margin-bottom:35px;
-
-color:#ddd;
-
-}
-
-@media(max-width:900px){
-
-.editor{
-
-grid-template-columns:1fr;
-
-}
-
-.editor img{
-
-height:420px;
-
-}
-
-}
-  <!-- ================= NEWSLETTER ================= -->
-
-<section class="newsletter">
-
-<h2>Join The Fashion Vault</h2>
-
-<p>
-
-Get the latest fashion trends, beauty inspiration and exclusive style guides delivered to your inbox.
-
-</p>
-
-<form>
-
-<input type="email" placeholder="Enter your email">
-
-<button>
-
-Subscribe/* ================= NEWSLETTER ================= */
-
-.newsletter{
-
-padding:100px 8%;
-
-text-align:center;
-
-background:#faf9f7;
-
-}
-
-.newsletter h2{
-
-font-size:55px;
-
-font-family:'Cormorant Garamond',serif;
-
-margin-bottom:20px;
-
-}
-
-.newsletter p{
-
-max-width:700px;
-
-margin:auto;
-
-margin-bottom:40px;
-
-font-size:18px;
-
-color:#555;
-
-}
-
-.newsletter form{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:15px;
-
-}
-
-.newsletter input{
-
-padding:18px;
-
-width:350px;
-
-border:1px solid #ddd;
-
-font-size:16px;
-
-}
-
-.newsletter button{
-
-padding:18px 35px;
-
-border:none;
-
-background:#c9a227;
-
-color:white;
-
-font-size:16px;
-
-cursor:pointer;
-
-transition:.4s;
-
-}
-
-.newsletter button:hover{
-
-background:#111;
-
-}
-  <!-- ================= FOOTER ================= -->
-
-<footer>
-
-<h2>THE FASHION VAULT</h2>
-
-<p>
-
-Luxury Fashion • Beauty • Shopping • Lifestyle
-
-</p>
-
-<p>
-
-Created by <strong>Champa Nath</strong><br>
-
-BCA (AI & ML) Student | Assam | India
-
-</p>
-
-<p>
-
-📧 nchampa881@gmail.com
-
-</p>
-
-<div class="socials">
-
-<a href="#">Pinterest</a>
-
-<a href="#">Instagram</a>
-
-<a href="#">Facebook</a>
-
-</div>
-
-<hr>
-
-<p>
-
-© 2026 The Fashion Vault. All Rights Reserved.
-
-</p>
-
-</footer>
-
-</body>
-
-</html>
-  /* ================= FOOTER ================= */
-
-footer{
-
-background:#000;
-
-color:white;
-
-text-align:center;
-
-padding:70px 8%;
-
-}
-
-footer h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:48px;
-
-margin-bottom:20px;
-
-letter-spacing:3px;
-
-}
-
-footer p{
-
-margin:15px 0;
-
-color:#ccc;
-
-}
-
-.socials{
-
-margin:35px 0;
-
-}
-
-.socials a{
-
-margin:0 15px;
-
-color:#c9a227;
-
-font-weight:bold;
-
-letter-spacing:1px;
-
-}
-
-footer hr{
-
-margin:40px auto;
-
-width:80%;
-
-border:0;
-
-border-top:1px solid #333;
-
-}
-
-</button>
-
-</form>
-
-</section>
-  header{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-padding:22px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-background:rgba(255,255,255,.92);
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 5px 25px rgba(0,0,0,.08);
-
-z-index:1000;
-
-transition:.4s;
-
-}
-  .logo{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:38px;
-
-font-weight:700;
-
-letter-spacing:5px;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.logo:hover{
-
-color:#c9a227;
-
-}
-  nav a{
-
-margin-left:40px;
-
 font-size:14px;
 
 font-weight:600;
 
-letter-spacing:3px;
+letter-spacing:2px;
 
 text-transform:uppercase;
 
@@ -1168,13 +142,72 @@ nav a:hover::after{
 width:100%;
 
 }
-  .button{
+
+/* ================= HERO ================= */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+color:white;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+animation:fadeUp 1.3s ease;
+
+}
+
+.hero h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:82px;
+
+letter-spacing:8px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+font-weight:300;
+
+margin-bottom:40px;
+
+}
+
+.button{
 
 display:inline-block;
 
-padding:18px 48px;
-
-border:2px solid #c9a227;
+padding:18px 45px;
 
 background:#c9a227;
 
@@ -1186,29 +219,25 @@ font-weight:600;
 
 transition:.4s;
 
+border:2px solid #c9a227;
+
 }
 
 .button:hover{
 
 background:transparent;
 
-color:white;
-
 border:2px solid white;
 
 }
-  .hero-content{
 
-animation:fadeUp 1.5s ease;
-
-}
-  @keyframes fadeUp{
+@keyframes fadeUp{
 
 from{
 
 opacity:0;
 
-transform:translateY(70px);
+transform:translateY(60px);
 
 }
 
@@ -1221,71 +250,71 @@ transform:translateY(0);
 }
 
 }
-  .article-card:hover{
 
-transform:translateY(-10px);
+@media(max-width:900px){
 
-}
-  .article-card{
+.hero h1{
 
-transition:.5s;
+font-size:50px;
 
 }
 
-.article-card:hover{
+nav{
 
-transform:translateY(-18px);
-
-box-shadow:0 25px 55px rgba(0,0,0,.18);
-
-}
-  ::-webkit-scrollbar{
-
-width:10px;
+display:none;
 
 }
 
-::-webkit-scrollbar-track{
-
-background:#f5f5f5;
-
 }
 
-::-webkit-scrollbar-thumb{
+</style>
 
-background:#c9a227;
+</head>
 
-border-radius:20px;
+<body>
 
-}
+<header>
 
-::-webkit-scrollbar-thumb:hover{
+<div class="logo">
 
-background:#111;
+THE <span>FASHION</span> VAULT
 
-}
-  body{
+</div>
 
-font-family:'Montserrat',sans-serif;
+<nav>
 
-background:#faf9f7;
+<a href="#">Home</a>
 
-}
-  body{
+<a href="#">About</a>
 
-font-family:'Montserrat',sans-serif;
+<a href="#">Fashion</a>
 
-background:#fdfcf9;
+<a href="#">Beauty</a>
 
-background-image:
+<a href="#">Contact</a>
 
-radial-gradient(circle at top left,#ffffff,#f8f7f4);
+</nav>
 
-color:#111;
+</header>
 
-line-height:1.8;
+<section class="hero">
 
-overflow-x:hidden;
+<div class="hero-content">
 
-}
-  
+<h1>THE FASHION VAULT</h1>
+
+<p>
+
+Luxury Fashion • Beauty • Shopping • Lifestyle
+
+</p>
+
+<a href="#" class="button">
+
+EXPLORE NOW
+
+</a>
+
+</div>
+
+</section>
